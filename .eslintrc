@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "node": true,
+  },
+
+  "rules": {
+    "padded-blocks": 0,
+    "key-spacing": [0, {
+      "align": "colon",
+      "beforeColon": true,
+      "afterColon": true
+    }],
+    "no-console": 2,
+    "indent": [2, 2, {
+      "SwitchCase": 1
+    }]
+  }
+}

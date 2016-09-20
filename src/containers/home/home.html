@@ -1,0 +1,48 @@
+<home-slider></home-slider>
+<section class="fade section-home-1" ng-class="{'fade-in': $ctrl.fade2}">
+  <div layout="row" layout-xs="column" layout-fill>
+    <div class="hoverable home-article home-article-1" layout="column" layout-fill layout-padding>
+      <div flex class="absolute">
+        <h2>Más allá del diseño</h2>
+        <span>Comprendemos su negocio para tomar mejores decisiones.</span>
+      </div>
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
+    <div class="hoverable home-article home-article-2" layout="column" layout-fill layout-padding>
+      <div flex class="absolute">
+        <h2>Llegue a lo más alto</h2>
+        <span>Gracias al posicionamiento en buscadores, marcará la diferencia.</span>
+      </div>
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
+  </div>
+  <div class="hoverable home-article home-article-3" layout="column" layout-fill layout-padding>
+    <h2 flex>Páginas web responsivas</h2>
+    <span flex>En un mundo multipantalla, su web debe adaptarse a cualquier formato para conseguir ofrecer una buena experiencia a todos los niveles</span>
+  </div>
+</section>
+<md-toolbar class="md-hue-1 fade" class="fade" ng-class="{'fade-in': $ctrl.fade1}">
+  <div class="md-toolbar-tools">
+    <h2>
+      <small>Mimetix © 2016 Keep calm and have fun </small>
+    </h2>
+    <md-menu>
+      <md-button class="md-icon-button" aria-label="More" ng-click="$ctrl.openMenu($mdOpenMenu, $event)">
+        <i class="material-icons" md-menu-origin>more_vert</i>
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item>
+          <md-button>
+            <img src="/logos/fb-logo.png" alt="">
+            Facebook
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button>
+            Google
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</md-toolbar>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es" ng-app="mimetix" ng-strict-di ng-cloak>
+
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="!!$title ? ('Mimetix | ' + $title) : 'Mimetix'"></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="Angular boilerplate based on components. Using webpack and ES6">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x1808" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/ico" href="/favicons/favicon.ico">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,500,500italic,700,700italic|Roboto:400,400italic,500,500italic,700,700italic|Material+Icons" rel="stylesheet" type="text/css">
+
+  <!--
+  TODO: add `RewriteRule ^apple-touch-icon(.*).png$ apple-touch-icon.png [L]` for all touch icon requests
+  See: https://gist.github.com/davidhund/332316f82440ef4377f3
+  -->
+  <base href="<%= htmlWebpackPlugin.options.templateOptions.baseTag %>">
+</head>
+
+<body>
+  <angular-app ng-cloak></angular-app>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.1/slick.js"></script>
+</body>
+
+
+</html>
