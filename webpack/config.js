@@ -43,13 +43,11 @@ module.exports = exports = {
   // build system
   VENDOR_DEPENDENCIES: [
     'angular',
-    'angular-animate',
+    'angular-scroll',
     'angular-aria',
     'angular-material',
     'angular-material/angular-material.css',
-    'angular-messages',
     'angular-ui-router',
-    'lodash',
     'slick-carousel',
   ],
 

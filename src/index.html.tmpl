@@ -10,23 +10,38 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="description" content="Angular boilerplate based on components. Using webpack and ES6">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="apple-touch-icon" sizes="180x1808" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/ico" href="/favicons/favicon.ico">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,500,500italic,700,700italic|Roboto:400,400italic,500,500italic,700,700italic|Material+Icons" rel="stylesheet" type="text/css">
-
-  <!--
-  TODO: add `RewriteRule ^apple-touch-icon(.*).png$ apple-touch-icon.png [L]` for all touch icon requests
-  See: https://gist.github.com/davidhund/332316f82440ef4377f3
-  -->
   <base href="<%= htmlWebpackPlugin.options.templateOptions.baseTag %>">
 </head>
 
 <body>
+  <h1 class="ng-hide">Mimetix: Diseño Web y Marketing Digital</h1>
   <angular-app ng-cloak></angular-app>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.1/slick.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "http://mimetix.com",
+      "contactPoint": [{
+        "name": "Mimetix",
+        "@type": "ContactPoint",
+        "telephone": "+34-636-648-939",
+        "contactType": "customer service",
+        "logo": "assets/logos/mimetix.png"
+      }],
+      "sameAs": [
+        "http://www.facebook.com/Mimetix",
+        "https://es.linkedin.com/in/diego-segura-fern&aacute;ndez-107a8859",
+        "http://plus.google.com/your_profile"
+      ]
+    }
+</script>
 </body>
 
 

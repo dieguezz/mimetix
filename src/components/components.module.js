@@ -1,9 +1,9 @@
 import angular from 'angular';
 
-import header from './header/header.module';
+import scrolling from './scrolling/scrolling.module';
 
 const componentsModule = angular.module('mimetix.components', [
-  header.name,
+  scrolling.name,
 ]);
 
 export default componentsModule;

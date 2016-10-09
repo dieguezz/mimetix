@@ -5,12 +5,9 @@
 
 // vendor dependencies
 import angular from 'angular';
-import { isFunction } from 'lodash';
 import router from 'angular-ui-router';
-import ngResource from 'angular-resource';
-import ngCookies from 'angular-cookies';
 import ngMaterial from 'angular-material';
-import ngMessages from 'angular-messages';
+import ngScroll from 'angular-scroll';
 // app components/directives
 import app from './containers/app/app';
 import components from './components/components.module';
@@ -21,18 +18,16 @@ import './styles/src/main.styl';
 // register app component and models
 import home from './modules/home/home.module';
 import contact from './modules/contact/contact.module';
+import footer from './modules/footer/footer.module';
 // app main module definition
 const mimetix = angular.module('mimetix', [
   router,
-  ngResource,
-  ngCookies,
   ngMaterial,
-  ngMessages,
-  'ngAnimate',
+  ngScroll,
   components.name,
   home.name,
   contact.name,
-  // models.name,
+  footer.name,
 ]);
 
 mimetix
@@ -50,15 +45,6 @@ mimetix
     $compileProvider.debugInfoEnabled(__DEV__);
     $logProvider.debugEnabled(__DEV__);
     /* eslint-enable no-undef */
-  })
-  .run(($rootScope, $state) => {
-    $rootScope.$on('$stateChangeSuccess', () => {
-      // change the page title
-      const title = $state.$current.locals.globals.$title;
-      /* eslint-disable no-param-reassign */
-      $rootScope.$title = isFunction(title) ? title() : title;
-      /* eslint-enable no-param-reassign */
-    });
   });
 
 export default mimetix;

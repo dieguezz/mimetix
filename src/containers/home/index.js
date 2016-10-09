@@ -1,44 +1,32 @@
+import angular from 'angular';
 import template from './home.html';
 import slider from './partials/slider.html';
+import slickConfig from './slick.config';
 import './home.styl';
 import './partials/slider.styl';
-import angular from 'angular';
-/* eslint-disable no-console,no-unused-vars */
+
 function sliderBody() {
   return {
     template: slider,
   };
 }
 
-function homeComponent($log, $mdDialog, $timeout, $http, $interval, $mdColorPalette) {
+function homeComponent($log, $timeout, $mdDialog) {
 
   'ngInject';
+
   const slickSlider = angular.element('.slick-slider');
-  const slickConfig = {
-    enabled: true,
-    autoplay: false,
-    draggable: true,
-    autoplaySpeed: 3000,
-    responsive: false,
-    infinite: true,
-    speed: 500,
-    dots: true,
-    arrows: true,
-    lazyLoad: true,
-    nextArrow: `<button type="button" class="slick-next">
-                <i class="material-icons">arrow_forward</i></button>`,
-    prevArrow: `<button type="button" class="slick-prev">
-                <i class="material-icons">arrow_back</i></button>`,
+
+  this.openContactModal = () => {
+    $mdDialog.show({
+      template: '<app-contact></app-contact>',
+      parent: angular.element(document.body),
+      clickOutsideToClose:true,
+      openFrom: '.contact-bubble',
+      closeTo: angular.element(document.querySelector('.contact-bubble')),
+    });
   };
 
-  let originatorEv;
-  this.number1 = [1];
-  this.currentIndex = 0;
-  this.openMenu = ($mdOpenMenu, ev) => {
-    originatorEv = ev;
-    $mdOpenMenu(ev);
-  };
-  const colours = Object.keys($mdColorPalette);
   this.$onInit = () => {
     $timeout(() => {
       this.fade1 = true;
@@ -48,7 +36,6 @@ function homeComponent($log, $mdDialog, $timeout, $http, $interval, $mdColorPale
       this.fade2 = true;
     }, 400);
   };
-
 }
 
 export default {

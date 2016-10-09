@@ -34,7 +34,7 @@ function makeBaseConfig() {
         },
         {
           test: /\.(html)$/,
-          loader:  'html?attrs[]=img:src&attrs[]=img:gc-src-fallback&attrs[]=md-icon:md-svg-src&root='+projectConfig.inSrc('assets'),
+          loader:  'html?attrs[]=img:src&attrs[]=img:gc-src-fallback&attrs[]=md-icon:data-md-svg-src&root='+projectConfig.inSrc('assets'),
           exclude: [/node_modules/]
         },
         {
