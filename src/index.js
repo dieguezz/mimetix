@@ -37,7 +37,7 @@ mimetix
     'ngInject';
 
     // ui-router config
-    $urlRouterProvider.otherwise('/404');
+    $urlRouterProvider.otherwise('home');
     $locationProvider.html5Mode(true);
 
     // __DEV__ is a "magic" environment var, see webpack/config.js
