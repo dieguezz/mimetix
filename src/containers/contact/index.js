@@ -10,24 +10,15 @@ function contactComponent($http, $log) {
   this.contactForm.message = '';
 
   this.sendEmail = () => {
-    const domain = 'mimetix.com';
+    const domain = 'http://localhost:8081';
     const data = {
-      from: this.contactForm.email,
-      to: 'diego.segura@mimetix.com',
-      subject: 'Contacto Web Mimetix',
-      text: this.contactForm.message,
+      email: JSON.stringify(this.contactForm.email),
+      message: JSON.stringify(this.contactForm.message),
     };
-    const mailgunApiKey = 'api:key-deb367be4c2450889fd03e2bed223027';
-    const config = {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        Authorization: `Basic ${mailgunApiKey}`,
-      },
-      method: 'POST',
-    };
-    const emailEndpoint = `https://api.mailgun.net/v3/${domain}/messages`;
 
-    $http.post(emailEndpoint, data, config).then((response) => {
+    const emailEndpoint = `${domain}/sendmail/${data.email}/${data.message}`;
+
+    $http.get(emailEndpoint, data).then((response) => {
       $log.log(response);
     }).catch((err) => {
       $log.log(err);
