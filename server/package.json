@@ -1,0 +1,10 @@
+{
+  "name": "mimetix-mailer",
+  "version": "0.0.1",
+  "description": "Mimetix mail sender",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nodemailer": "^2.6.4"
+  }
+}
