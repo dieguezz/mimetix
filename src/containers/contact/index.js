@@ -10,7 +10,7 @@ function contactComponent($http, $log) {
   this.contactForm.message = '';
 
   this.sendEmail = () => {
-    const domain = 'sandbox1b7008a155644c6c814eba05dc5c59e1.mailgun.org';
+    const domain = 'mimetix.com';
     const data = {
       from: this.contactForm.email,
       to: 'diego.segura@mimetix.com',
