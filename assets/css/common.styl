@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Roboto mono;
+  src: url('~/assets/fonts/Roboto-Mono-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~/assets/fonts/Roboto-Mono-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body
+  background-color #f6f6f6
+  font-size 14px
+.button-primary
+  box-shadow 0 1px 16px 1px rgba(45, 237, 209, 0)
+  border-radius 5px
+  background-color #00d1b7
+  padding 17px 40px
+  border 0
+  color white
+  display inline-block
+  font-family Raleway
+  text-transform uppercase
+  font-weight bold
+  transition box-shadow .15s ease-in
+  cursor: pointer;
+  &:hover
+    box-shadow 0 3px 16px 1px rgba(45, 237, 209, 0.5)
+
+h1 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+.eq-flex {
+  flex: 1;
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.c-white {
+  color: white;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.h-center {
+  justify-content: center;
+}
+
+.l-normal {
+  text-decoration: none;
+  color: white;
+}
+
+.h-between {
+  justify-content: space-between;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.search {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.hosting {
+  width: 150px;
+  height: 150px;
+  background-color: #3f51b5;
+  border-radius: 50%;
+  padding: 60px;
+  color: white;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.img-slide {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.logo {
+  animation: shake 0.82s infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .eq-flex {
+    flex: none;
+  }
+
+  img.search, img.hosting {
+    padding: 30px;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
