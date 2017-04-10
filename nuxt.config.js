@@ -43,7 +43,7 @@ module.exports = {
     // Nuxt.js lets you upload your dist files to your CDN for maximum performances, simply set the publicPath to your CDN.
     // publicPath: 'https://cdn.nuxtjs.org'
     // Nuxt.js lets you add modules inside the vendor.bundle.js file generated to reduce the size of the app bundle. It's really useful when using external modules (like axios for example)
-    vendor: ['axios'],
+    vendor: [],
   },
   cache: {
     max: 1000,
@@ -111,7 +111,7 @@ module.exports = {
     prefetch: true
   },
   // The plugins property lets you add vue.js plugins easily to your main application.
-  plugins: ['~plugins/svg-sprite-loader', '~plugins/i18n'],
+  plugins: ['~plugins/svg-sprite-loader'],
   // Define the workspace (string)
   rootDir: process.cwd(),
   router: {
@@ -122,7 +122,7 @@ module.exports = {
       return { x: 0, y: 0 }
     },
     // Set the default(s) middleware for every pages of the application.
-    middleware: ['i18n']
+    middleware: []
     // You may want to extend the routes created by nuxt.js. You can do it via the extendRoutes option.
     // extendRoutes(routes, resolve) {
     //   routes.push({
