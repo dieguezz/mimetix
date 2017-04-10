@@ -96,7 +96,7 @@ module.exports = {
   // },
   // define all default meta for your application:
   head: {
-    titleTemplate: '%s - Nuxt.js',
+    titleTemplate: 'Mimetix',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -108,7 +108,7 @@ module.exports = {
   // performance options.
   performance: {
     gzip: true,
-    prefetch: true
+    prefetch: false
   },
   // The plugins property lets you add vue.js plugins easily to your main application.
   plugins: ['~plugins/svg-sprite-loader'],

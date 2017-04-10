@@ -6,7 +6,7 @@
 <script>
 import Vue from 'vue'
 import NuxtChild from './nuxt-child'
-import NuxtError from '/var/www/mimetix/layouts/error.vue'
+import NuxtError from '/Users/Dieguin/repos/test/mimetix/layouts/error.vue'
 
 export default {
   name: 'nuxt',

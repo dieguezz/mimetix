@@ -1,14 +1,13 @@
 {
-  "name": "geniac",
+  "name": "mimetix",
   "scripts": {
     "dev": "nuxt"
   },
   "dependencies": {
-    "axios": "^0.15.3",
-    "babel-preset-es2015": "^6.24.1",
     "nuxt": "^0.10.5"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "svg-sprite-loader": "^0.3.0"
