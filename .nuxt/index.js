@@ -6,7 +6,7 @@ import router from './router.js'
 
 import NuxtChild from './components/nuxt-child.js'
 import NuxtLink from './components/nuxt-link.js'
-import NuxtError from '/var/www/mimetix/layouts/error.vue'
+import NuxtError from '/Users/Dieguin/repos/test/mimetix/layouts/error.vue'
 import Nuxt from './components/nuxt.vue'
 import App from './App.vue'
 
@@ -38,6 +38,11 @@ if (process.browser) {
 // Includes external plugins
 
     require('~plugins/svg-sprite-loader')
+  
+
+    if (process.browser) {
+      require('~plugins/ga.js')
+    }
   
 
 

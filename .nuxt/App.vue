@@ -10,7 +10,7 @@
 
 let layouts = {
 
-  "_default": () => import('/var/www/mimetix/layouts/default.vue')
+  "_default": () => import('/Users/Dieguin/repos/test/mimetix/layouts/default.vue')
 
 }
 

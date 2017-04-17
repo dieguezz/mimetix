@@ -111,7 +111,7 @@ module.exports = {
     prefetch: false
   },
   // The plugins property lets you add vue.js plugins easily to your main application.
-  plugins: ['~plugins/svg-sprite-loader'],
+  plugins: ['~plugins/svg-sprite-loader', { src: '~plugins/ga.js', ssr: false }],
   // Define the workspace (string)
   rootDir: process.cwd(),
   router: {
