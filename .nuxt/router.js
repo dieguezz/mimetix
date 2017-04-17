@@ -6,7 +6,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 
-const _b35f7528 = () => import('/Users/Dieguin/repos/test/mimetix/pages/index.vue')
+const _6c428246 = () => import('/var/www/mimetix/pages/index.vue')
 
 
 
@@ -23,7 +23,7 @@ export default new Router({
   routes: [
 		{
 			path: "/",
-			component: _b35f7528,
+			component: _6c428246,
 			name: "index"
 		}
   ]
